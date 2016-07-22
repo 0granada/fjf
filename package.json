@@ -4,14 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "chimp",
+    "test:w": "chimp --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.13.0",
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^2.3.2"
+  },
+  "dependencies": {
+    "chimp": "^0.39.0"
   }
 }

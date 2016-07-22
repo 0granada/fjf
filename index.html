@@ -10,7 +10,7 @@
   <link href="static/styles/starter-template.css" rel="stylesheet">
   <link href="static/styles/fjf.css" rel="stylesheet">
 </head>
-<body>
+<body ng-app="MainApp" ng-controller="MainController as vm">
   
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -45,15 +45,15 @@
           <option value="hotdog">Hot Dog</option>
         </select>
         <div class="Food-product col-xs-12">
-          <label for="">Quantity: </label> <span class="Food-quantityValue">0</span> 
-          <button class="btn btn-xs btn-success">+</button>
+          <label for="">Quantity: </label> <span class="Food-quantityValue">{{ vm.quantity }}</span> 
+          <button class="Food-increaseQuantity btn btn-xs btn-success" ng-click="vm.addElement()">+</button>
           <button class="btn btn-xs btn-danger">-</button>
         </div>
       </div>
 
       <div class="Total">
         <h2>TOTAL:</h2>
-        <span>$</span><span class="Total-price">0</span>
+        <span>$</span><span class="Total-price">{{ vm.total }}</span>
       </div>
 
 
@@ -63,7 +63,7 @@
     <script type="text/temnplate" id="product">
       
         <div class="Food-product col-xs-12">
-          <label for="">Quantity: </label> <span class="Food-quantityValue">0</span> 
+          <label for="">Quantity: </label> <span class="Food-quantityValue"> {{ vm.total() }} </span> 
           <button class="btn btn-xs btn-success">+</button>
           <button class="btn btn-xs btn-danger">-</button>
         </div>
@@ -73,5 +73,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.js"></script>
+  <script src="/static/js/main.js"></script>
 </body>
 </html>
