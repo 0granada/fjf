@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FJF</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="static/styles/starter-template.css" rel="stylesheet">
+  <link href="static/styles/fjf.css" rel="stylesheet">
+</head>
+<body>
+  
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Funky Junky Food</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>Funky Junky Food</h1>
+        <p class="lead">Book your junk with food.</p>
+      </div>
+
+      <div class="Food">
+        <label for="foodName">Select Food:</label>
+        <select class="Food-foodName col-xs-12" name="foodName" id="foodName">
+          <option value="hotdog">Hot Dog</option>
+        </select>
+        <div class="Food-product col-xs-12">
+          <label for="">Quantity: </label> <span class="Food-quantityValue">0</span> 
+          <button class="btn btn-xs btn-success">+</button>
+          <button class="btn btn-xs btn-danger">-</button>
+        </div>
+      </div>
+
+      <div class="Total">
+        <h2>TOTAL:</h2>
+        <span>$</span><span class="Total-price">0</span>
+      </div>
+
+
+    </div><!-- /.container -->
+
+
+    <script type="text/temnplate" id="product">
+      
+        <div class="Food-product col-xs-12">
+          <label for="">Quantity: </label> <span class="Food-quantityValue">0</span> 
+          <button class="btn btn-xs btn-success">+</button>
+          <button class="btn btn-xs btn-danger">-</button>
+        </div>
+
+    </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>
