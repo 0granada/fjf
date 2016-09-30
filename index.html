@@ -44,21 +44,26 @@
         <select class="Food-foodName col-xs-12" name="foodName" id="foodName">
           <option value="hotdog">Hot Dog</option>
         </select>
-        <div class="Food-product col-xs-12">
-          <label for="">Quantity: </label> <span class="Food-quantityValue">{{ vm.quantity }}</span> 
-          <button class="Food-increaseQuantity btn btn-xs btn-success" ng-click="vm.addElement()">+</button>
-          <button class="btn btn-xs btn-danger">-</button>
-        </div>
+      </div>
+      <div class="Drink">
+        <label for="drinkName">Select Drink:</label>
+        <select class="Drink-drinkName col-xs-12" name="drinkName" id="drinkName">
+          <option value="Coca Cola">Coca Cola</option>
+        </select>
+      </div>
+      <div class="Product col-xs-12">
+        <label for="">Quantity: </label> <span class="Food-quantityValue">{{ vm.quantity }}</span> 
       </div>
 
       <div class="Total">
-        <h2>TOTAL:</h2>
-        <span>$</span><span class="Total-price">{{ vm.total }}</span>
+        <h2>TOTAL ORDER:</h2>
+        <span>$</span> <span class="Total-price">{{ vm.total }}</span>
       </div>
-
 
     </div><!-- /.container -->
 
+      <footer class="footer"> 
+      </footer>
 
     <script type="text/temnplate" id="product">
       
